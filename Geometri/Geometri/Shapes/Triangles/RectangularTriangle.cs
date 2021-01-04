@@ -4,6 +4,7 @@ using System.Text;
 
 namespace Geometri.Shapes.Triangles
 {
+//Hvor er dine kodekommentar
     class RectangularTriangle : Shape
     {
         private double _sideA;
