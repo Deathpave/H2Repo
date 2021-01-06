@@ -481,11 +481,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\MartinRiehnMadsen\\source\\repos\\H2Repo\\Landlyst\\LandlystUsers\\LandlystUsers.csproj",
+      "projectUniqueName": "C:\\Users\\MartinRiehnMadsen\\Source\\Repos\\H2Repo\\Landlyst\\LandlystUsers\\LandlystUsers.csproj",
       "projectName": "LandlystUsers",
-      "projectPath": "C:\\Users\\MartinRiehnMadsen\\source\\repos\\H2Repo\\Landlyst\\LandlystUsers\\LandlystUsers.csproj",
+      "projectPath": "C:\\Users\\MartinRiehnMadsen\\Source\\Repos\\H2Repo\\Landlyst\\LandlystUsers\\LandlystUsers.csproj",
       "packagesPath": "C:\\Users\\MartinRiehnMadsen\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\MartinRiehnMadsen\\source\\repos\\H2Repo\\Landlyst\\LandlystUsers\\obj\\",
+      "outputPath": "C:\\Users\\MartinRiehnMadsen\\Source\\Repos\\H2Repo\\Landlyst\\LandlystUsers\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -505,8 +505,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\MartinRiehnMadsen\\source\\repos\\H2Repo\\Landlyst\\Landlyst\\Landlyst.csproj": {
-              "projectPath": "C:\\Users\\MartinRiehnMadsen\\source\\repos\\H2Repo\\Landlyst\\Landlyst\\Landlyst.csproj"
+            "C:\\Users\\MartinRiehnMadsen\\Source\\Repos\\H2Repo\\Landlyst\\Landlyst\\Landlyst.csproj": {
+              "projectPath": "C:\\Users\\MartinRiehnMadsen\\Source\\Repos\\H2Repo\\Landlyst\\Landlyst\\Landlyst.csproj"
             }
           }
         }

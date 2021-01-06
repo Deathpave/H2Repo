@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\MartinRiehnMadsen\\source\\repos\\H2Repo\\HjælpJakob\\HelpJakob\\HelpJakob\\HelpJakob.csproj": {}
+    "C:\\Users\\MartinRiehnMadsen\\Source\\Repos\\H2Repo\\HjælpJakob\\HelpJakob\\HelpJakob\\HelpJakob.csproj": {}
   },
   "projects": {
-    "C:\\Users\\MartinRiehnMadsen\\source\\repos\\H2Repo\\HjælpJakob\\HelpJakob\\HelpJakob\\HelpJakob.csproj": {
+    "C:\\Users\\MartinRiehnMadsen\\Source\\Repos\\H2Repo\\HjælpJakob\\HelpJakob\\HelpJakob\\HelpJakob.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MartinRiehnMadsen\\source\\repos\\H2Repo\\HjælpJakob\\HelpJakob\\HelpJakob\\HelpJakob.csproj",
+        "projectUniqueName": "C:\\Users\\MartinRiehnMadsen\\Source\\Repos\\H2Repo\\HjælpJakob\\HelpJakob\\HelpJakob\\HelpJakob.csproj",
         "projectName": "HelpJakob",
-        "projectPath": "C:\\Users\\MartinRiehnMadsen\\source\\repos\\H2Repo\\HjælpJakob\\HelpJakob\\HelpJakob\\HelpJakob.csproj",
+        "projectPath": "C:\\Users\\MartinRiehnMadsen\\Source\\Repos\\H2Repo\\HjælpJakob\\HelpJakob\\HelpJakob\\HelpJakob.csproj",
         "packagesPath": "C:\\Users\\MartinRiehnMadsen\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MartinRiehnMadsen\\source\\repos\\H2Repo\\HjælpJakob\\HelpJakob\\HelpJakob\\obj\\",
+        "outputPath": "C:\\Users\\MartinRiehnMadsen\\Source\\Repos\\H2Repo\\HjælpJakob\\HelpJakob\\HelpJakob\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
