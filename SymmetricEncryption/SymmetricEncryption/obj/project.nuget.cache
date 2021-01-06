@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YWasQHHDrk7WRcb9we8thlyH1eZY/uKotewAvLAzttEDjzkWWg7cQeRa4VtJbvgYVEeRTavOE2CxUTzjg5GZ/Q==",
+  "dgSpecHash": "g7MsJxpz4IoFY0r5fd8+cf/1rpAwKwAVJLX8zg2hlMdvCd2XrbUFDzl1Rdltun3n0DHZjbZ2wrZB4HAFQ9yhMA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\MartinRiehnMadsen\\Source\\Repos\\H2Repo\\SymmetricEncryption\\SymmetricEncryption\\SymmetricEncryption.csproj",
+  "projectFilePath": "C:\\Users\\MartinRiehnMadsen\\source\\repos\\H2Repo\\SymmetricEncryption\\SymmetricEncryption\\SymmetricEncryption.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\MartinRiehnMadsen\\.nuget\\packages\\google.gdata.client\\2.2.0\\google.gdata.client.2.2.0.nupkg.sha512",
     "C:\\Users\\MartinRiehnMadsen\\.nuget\\packages\\google.gdata.extensions\\2.2.0\\google.gdata.extensions.2.2.0.nupkg.sha512",

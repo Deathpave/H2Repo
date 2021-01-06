@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
+using System.Text;
 
 namespace SymmetricEncryption
 {
@@ -38,14 +39,13 @@ namespace SymmetricEncryption
             byte[] key = algorithm.GenerateRandomNumber(keylength);
             byte[] iv = algorithm.GenerateRandomNumber(ivlength);
 
-
-            byte[] encrypted = algorithm.Encrypt(Convert.FromBase64String(encryptme), key, iv);
+            byte[] encrypted = algorithm.Encrypt(Encoding.UTF8.GetBytes(encryptme), key, iv);
             byte[] decrypted = algorithm.Decrypt(encrypted, key, iv);
             stopwatch.Stop();
 
-            Console.WriteLine(Convert.ToBase64String(encrypted));
+            Console.WriteLine(Encoding.UTF8.GetString(encrypted));
             Console.WriteLine(BitConverter.ToString(encrypted));
-            Console.WriteLine(Convert.ToBase64String(decrypted));
+            Console.WriteLine(Encoding.UTF8.GetString(decrypted));
             Console.WriteLine(BitConverter.ToString(decrypted));
             Console.WriteLine("Total time taken: " + stopwatch.ElapsedMilliseconds + " milliseconds");
             Console.ReadLine();
