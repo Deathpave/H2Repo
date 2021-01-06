@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\MartinRiehnMadsen\\source\\repos\\H2Repo\\SymmetricEncryption\\SymmetricEncryption\\SymmetricEncryption.csproj": {}
+    "C:\\Users\\MartinRiehnMadsen\\Source\\Repos\\H2Repo\\SymmetricEncryption\\SymmetricEncryption\\SymmetricEncryption.csproj": {}
   },
   "projects": {
-    "C:\\Users\\MartinRiehnMadsen\\source\\repos\\H2Repo\\SymmetricEncryption\\SymmetricEncryption\\SymmetricEncryption.csproj": {
+    "C:\\Users\\MartinRiehnMadsen\\Source\\Repos\\H2Repo\\SymmetricEncryption\\SymmetricEncryption\\SymmetricEncryption.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MartinRiehnMadsen\\source\\repos\\H2Repo\\SymmetricEncryption\\SymmetricEncryption\\SymmetricEncryption.csproj",
+        "projectUniqueName": "C:\\Users\\MartinRiehnMadsen\\Source\\Repos\\H2Repo\\SymmetricEncryption\\SymmetricEncryption\\SymmetricEncryption.csproj",
         "projectName": "SymmetricEncryption",
-        "projectPath": "C:\\Users\\MartinRiehnMadsen\\source\\repos\\H2Repo\\SymmetricEncryption\\SymmetricEncryption\\SymmetricEncryption.csproj",
+        "projectPath": "C:\\Users\\MartinRiehnMadsen\\Source\\Repos\\H2Repo\\SymmetricEncryption\\SymmetricEncryption\\SymmetricEncryption.csproj",
         "packagesPath": "C:\\Users\\MartinRiehnMadsen\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MartinRiehnMadsen\\source\\repos\\H2Repo\\SymmetricEncryption\\SymmetricEncryption\\obj\\",
+        "outputPath": "C:\\Users\\MartinRiehnMadsen\\Source\\Repos\\H2Repo\\SymmetricEncryption\\SymmetricEncryption\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -41,6 +41,16 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "Google.GData.Extensions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "System.Windows.Extensions": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

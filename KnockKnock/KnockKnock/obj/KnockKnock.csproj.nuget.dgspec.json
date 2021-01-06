@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\MartinRiehnMadsen\\Source\\Repos\\H2Repo\\HashedLogin\\HashedLogin\\HashedLogin.csproj": {}
+    "C:\\Users\\MartinRiehnMadsen\\source\\repos\\H2Repo\\KnockKnock\\KnockKnock\\KnockKnock.csproj": {}
   },
   "projects": {
-    "C:\\Users\\MartinRiehnMadsen\\Source\\Repos\\H2Repo\\HashedLogin\\HashedLogin\\HashedLogin.csproj": {
+    "C:\\Users\\MartinRiehnMadsen\\source\\repos\\H2Repo\\KnockKnock\\KnockKnock\\KnockKnock.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MartinRiehnMadsen\\Source\\Repos\\H2Repo\\HashedLogin\\HashedLogin\\HashedLogin.csproj",
-        "projectName": "HashedLogin",
-        "projectPath": "C:\\Users\\MartinRiehnMadsen\\Source\\Repos\\H2Repo\\HashedLogin\\HashedLogin\\HashedLogin.csproj",
+        "projectUniqueName": "C:\\Users\\MartinRiehnMadsen\\source\\repos\\H2Repo\\KnockKnock\\KnockKnock\\KnockKnock.csproj",
+        "projectName": "KnockKnock",
+        "projectPath": "C:\\Users\\MartinRiehnMadsen\\source\\repos\\H2Repo\\KnockKnock\\KnockKnock\\KnockKnock.csproj",
         "packagesPath": "C:\\Users\\MartinRiehnMadsen\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MartinRiehnMadsen\\Source\\Repos\\H2Repo\\HashedLogin\\HashedLogin\\obj\\",
+        "outputPath": "C:\\Users\\MartinRiehnMadsen\\source\\repos\\H2Repo\\KnockKnock\\KnockKnock\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
