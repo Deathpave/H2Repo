@@ -8,8 +8,20 @@ namespace AsymEncryptServ
     {
         static void Main(string[] args)
         {
+            RSAXml();
+            Console.ReadLine();
             RSAParameter();
             Console.ReadLine();
+        }
+
+        public static void RSAXml()
+        {
+            RSAXML rsa = new RSAXML();
+            rsa.AssignNewKeys();
+            Console.WriteLine("Insert encrypted text from other program");
+            string input = Console.ReadLine();
+            byte[] decrypted = rsa.Decrypt(Convert.FromBase64String(input));
+            Console.WriteLine(Encoding.UTF8.GetString(decrypted));
         }
 
         public static void RSAParameter()
