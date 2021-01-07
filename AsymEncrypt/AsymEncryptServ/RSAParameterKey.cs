@@ -46,6 +46,19 @@ namespace AsymEncryptServ
             keysdata.Add(Convert.ToBase64String(_publicKey.Modulus));
             keysdata.Add("");
             // insert private key data to show off
+            keysdata.Add("Private Key:");
+            keysdata.Add("D:");
+            keysdata.Add(Convert.ToBase64String(_privateKey.D));
+            keysdata.Add("DP:");
+            keysdata.Add(Convert.ToBase64String(_privateKey.DP));
+            keysdata.Add("DQ:");
+            keysdata.Add(Convert.ToBase64String(_privateKey.DQ));
+            keysdata.Add("Inverse Q:");
+            keysdata.Add(Convert.ToBase64String(_privateKey.InverseQ));
+            keysdata.Add("P:");
+            keysdata.Add(Convert.ToBase64String(_privateKey.P));
+            keysdata.Add("Q:");
+            keysdata.Add(Convert.ToBase64String(_privateKey.Q));
 
             return keysdata;
         }
