@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\MartinRiehnMadsen\\Source\\Repos\\H2Repo\\AsymEncrypt\\AsymEncrypt\\AsymEncrypt.csproj": {}
+    "C:\\Users\\MartinRiehnMadsen\\source\\repos\\H2Repo\\AsymEncrypt\\AsymEncrypt\\AsymEncrypt.csproj": {}
   },
   "projects": {
-    "C:\\Users\\MartinRiehnMadsen\\Source\\Repos\\H2Repo\\AsymEncrypt\\AsymEncrypt\\AsymEncrypt.csproj": {
+    "C:\\Users\\MartinRiehnMadsen\\source\\repos\\H2Repo\\AsymEncrypt\\AsymEncrypt\\AsymEncrypt.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MartinRiehnMadsen\\Source\\Repos\\H2Repo\\AsymEncrypt\\AsymEncrypt\\AsymEncrypt.csproj",
+        "projectUniqueName": "C:\\Users\\MartinRiehnMadsen\\source\\repos\\H2Repo\\AsymEncrypt\\AsymEncrypt\\AsymEncrypt.csproj",
         "projectName": "AsymEncrypt",
-        "projectPath": "C:\\Users\\MartinRiehnMadsen\\Source\\Repos\\H2Repo\\AsymEncrypt\\AsymEncrypt\\AsymEncrypt.csproj",
+        "projectPath": "C:\\Users\\MartinRiehnMadsen\\source\\repos\\H2Repo\\AsymEncrypt\\AsymEncrypt\\AsymEncrypt.csproj",
         "packagesPath": "C:\\Users\\MartinRiehnMadsen\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MartinRiehnMadsen\\Source\\Repos\\H2Repo\\AsymEncrypt\\AsymEncrypt\\obj\\",
+        "outputPath": "C:\\Users\\MartinRiehnMadsen\\source\\repos\\H2Repo\\AsymEncrypt\\AsymEncrypt\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
