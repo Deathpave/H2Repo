@@ -1,0 +1,13 @@
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\AsymEncrypt\AsymEncryptServ\bin\Debug\netcoreapp3.1\AsymEncryptServ.exe
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\AsymEncrypt\AsymEncryptServ\bin\Debug\netcoreapp3.1\AsymEncryptServ.deps.json
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\AsymEncrypt\AsymEncryptServ\bin\Debug\netcoreapp3.1\AsymEncryptServ.runtimeconfig.json
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\AsymEncrypt\AsymEncryptServ\bin\Debug\netcoreapp3.1\AsymEncryptServ.runtimeconfig.dev.json
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\AsymEncrypt\AsymEncryptServ\bin\Debug\netcoreapp3.1\AsymEncryptServ.dll
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\AsymEncrypt\AsymEncryptServ\bin\Debug\netcoreapp3.1\AsymEncryptServ.pdb
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\AsymEncrypt\AsymEncryptServ\obj\Debug\netcoreapp3.1\AsymEncryptServ.csprojAssemblyReference.cache
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\AsymEncrypt\AsymEncryptServ\obj\Debug\netcoreapp3.1\AsymEncryptServ.AssemblyInfoInputs.cache
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\AsymEncrypt\AsymEncryptServ\obj\Debug\netcoreapp3.1\AsymEncryptServ.AssemblyInfo.cs
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\AsymEncrypt\AsymEncryptServ\obj\Debug\netcoreapp3.1\AsymEncryptServ.csproj.CoreCompileInputs.cache
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\AsymEncrypt\AsymEncryptServ\obj\Debug\netcoreapp3.1\AsymEncryptServ.dll
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\AsymEncrypt\AsymEncryptServ\obj\Debug\netcoreapp3.1\AsymEncryptServ.pdb
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\AsymEncrypt\AsymEncryptServ\obj\Debug\netcoreapp3.1\AsymEncryptServ.genruntimeconfig.cache
