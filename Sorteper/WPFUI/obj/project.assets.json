@@ -1,0 +1,96 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "SorteperLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/SorteperLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SorteperLibrary.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SorteperLibrary/1.0.0": {
+      "type": "project",
+      "path": "../SorteperLibrary/SorteperLibrary.csproj",
+      "msbuildProject": "../SorteperLibrary/SorteperLibrary.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "SorteperLibrary >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\MartinRiehnMadsen\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\MartinRiehnMadsen\\source\\repos\\H2Repo\\Sorteper\\WPFUI\\WPFUI.csproj",
+      "projectName": "WPFUI",
+      "projectPath": "C:\\Users\\MartinRiehnMadsen\\source\\repos\\H2Repo\\Sorteper\\WPFUI\\WPFUI.csproj",
+      "packagesPath": "C:\\Users\\MartinRiehnMadsen\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\MartinRiehnMadsen\\source\\repos\\H2Repo\\Sorteper\\WPFUI\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\MartinRiehnMadsen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "projectReferences": {
+            "C:\\Users\\MartinRiehnMadsen\\source\\repos\\H2Repo\\Sorteper\\SorteperLibrary\\SorteperLibrary.csproj": {
+              "projectPath": "C:\\Users\\MartinRiehnMadsen\\source\\repos\\H2Repo\\Sorteper\\SorteperLibrary\\SorteperLibrary.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          },
+          "Microsoft.WindowsDesktop.App.WPF": {
+            "privateAssets": "none"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

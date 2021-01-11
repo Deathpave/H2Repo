@@ -7,8 +7,8 @@ namespace AsymEncrypt
     {
         static void Main(string[] args)
         {
-            //RSAXml();
-            //Console.ReadLine();
+            RSAXml();
+            Console.ReadLine();
             RSAParameter();
             Console.ReadLine();
         }

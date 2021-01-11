@@ -9,8 +9,8 @@ namespace AsymEncryptServ
     {
         static void Main(string[] args)
         {
-            //RSAXml();
-            //Console.ReadLine();
+            RSAXml();
+            Console.ReadLine();
             RSAParameter();
             Console.ReadLine();
         }
@@ -39,7 +39,7 @@ namespace AsymEncryptServ
             Console.WriteLine("Insert encrypted text from other program!");
             string input = Console.ReadLine();
 
-            byte[] decryptraw = Encoding.UTF8.GetBytes(input);
+            //byte[] decryptraw = Encoding.UTF8.GetBytes(input);
             byte[] decrypted = rSAParam.Decrypt(Convert.FromBase64String(input));
             Console.WriteLine("Decrypted text:\n" + Encoding.UTF8.GetString(decrypted));
         }

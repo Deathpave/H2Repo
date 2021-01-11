@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleUI", "ConsoleUI\ConsoleUI.csproj", "{5593EA81-D127-4B67-AC8A-A67BF32A7176}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleUI", "ConsoleUI\ConsoleUI.csproj", "{5593EA81-D127-4B67-AC8A-A67BF32A7176}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SorteperLibrary", "SorteperLibrary\SorteperLibrary.csproj", "{D8688FF8-A906-42C6-A78A-E10763A1B716}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SorteperLibrary", "SorteperLibrary\SorteperLibrary.csproj", "{D8688FF8-A906-42C6-A78A-E10763A1B716}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFUI", "WPFUI\WPFUI.csproj", "{9129B322-A232-4E9B-A961-10E5DEBD03CB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{D8688FF8-A906-42C6-A78A-E10763A1B716}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D8688FF8-A906-42C6-A78A-E10763A1B716}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D8688FF8-A906-42C6-A78A-E10763A1B716}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9129B322-A232-4E9B-A961-10E5DEBD03CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9129B322-A232-4E9B-A961-10E5DEBD03CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9129B322-A232-4E9B-A961-10E5DEBD03CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9129B322-A232-4E9B-A961-10E5DEBD03CB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

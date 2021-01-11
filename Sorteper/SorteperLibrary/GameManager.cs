@@ -16,7 +16,7 @@ namespace SorteperLibrary
         // Empty list for players
         List<IPlayer> players = new List<IPlayer>();
         Random random = new Random();
-
+        
         // Handling of turn
         int currentPlayer = 0;
 
