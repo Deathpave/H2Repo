@@ -24,12 +24,12 @@ namespace WPFUI.UserControls
         // props
         private GameManager _gameManager = null;
         private List<ICard> _currentPlayerCards = null;
-        public UGame()
+        public UGame(GameManager gameManager)
         {
             InitializeComponent();
 
             // gets the current gamemanager
-            _gameManager = MainWindow.GameInstance();
+            _gameManager = gameManager;
 
             // setes player logo
             // static img for now
@@ -52,7 +52,7 @@ namespace WPFUI.UserControls
 
             // gets the current players cards
             _currentPlayerCards = _gameManager.GetPlayerCards();
-            
+
             // creates images for each card
             foreach (ICard card in _currentPlayerCards)
             {
@@ -78,6 +78,7 @@ namespace WPFUI.UserControls
             // gets the int of selected card
             int selectedCard = (int)sender;
 
+            // takes the wrong manager???
             // tells manager to take the card
             _gameManager.PlayerTakeCard(selectedCard);
 
@@ -97,19 +98,20 @@ namespace WPFUI.UserControls
             // changes turn
             _gameManager.EndTurn();
 
-            // matches cards if possible
-            _gameManager.PlayerMatchCards();
-
             // if there is only one player
             if (_gameManager.ActivePlayers() == 1)
             {
                 // sets window to show lose screen
                 ContentController.Content = new UEndScreen(_gameManager.GetPlayerName());
             }
-            
+
             // if there is more then one player
             else
             {
+
+                // matches cards if possible
+                _gameManager.PlayerMatchCards();
+
                 // sets txt to current players name
                 TxtPlayerName.Text = _gameManager.GetPlayerName();
 

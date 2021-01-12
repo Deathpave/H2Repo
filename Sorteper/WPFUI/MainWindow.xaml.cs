@@ -3,6 +3,7 @@ using System.Windows;
 using WPFUI.UserControls;
 using System.ComponentModel;
 using System;
+using System.Threading;
 
 namespace WPFUI
 {
@@ -11,7 +12,7 @@ namespace WPFUI
     /// </summary>
     public partial class MainWindow : Window
     {
-        private static GameManager _gameManager = null;
+        private GameManager _gameManager = null;
         public MainWindow()
         {
             InitializeComponent();
@@ -34,12 +35,6 @@ namespace WPFUI
             _gameManager = null;
             _gameManager = new GameManager();
             ContentController.Content = new USetup();
-        }
-
-        // method to return the current gamemanager
-        public static GameManager GameInstance()
-        {
-            return _gameManager;
         }
 
         // method to exit the application
@@ -65,7 +60,7 @@ namespace WPFUI
         private void USetup_Close(object sender, PropertyChangedEventArgs e)
         {
             _gameManager.DealCards();
-            ContentController.Content = new UGame();
+            ContentController.Content = new UGame(_gameManager);
         }
 
         // method to create a player
