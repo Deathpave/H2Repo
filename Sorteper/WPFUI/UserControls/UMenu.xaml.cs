@@ -19,6 +19,7 @@ namespace WPFUI.UserControls
     /// </summary>
     public partial class UMenu : UserControl
     {
+        // events
         public static PropertyChangedEventHandler NewGame;
         public static PropertyChangedEventHandler Tutorial;
         public static PropertyChangedEventHandler Exit;
@@ -28,18 +29,24 @@ namespace WPFUI.UserControls
             InitializeComponent();
         }
 
+        // method to start new game
         private void btnNewGame_Click(object sender, RoutedEventArgs e)
         {
+            // fires event for new game
             NewGame?.Invoke("", null);
         }
 
+        // method to start the tutorial
         private void btnTutorial_Click(object sender, RoutedEventArgs e)
         {
+            // fires event to start tutorial
             Tutorial?.Invoke("", null);
         }
 
+        // method to exit application
         private void btnExit_Click(object sender, RoutedEventArgs e)
         {
+            // fires event to exit application
             Exit?.Invoke("", null);
         }
     }

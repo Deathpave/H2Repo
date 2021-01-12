@@ -21,57 +21,108 @@ namespace WPFUI.UserControls
     /// </summary>
     public partial class UGame : UserControl
     {
+        // props
         private GameManager _gameManager = null;
         private List<ICard> _currentPlayerCards = null;
         public UGame()
         {
             InitializeComponent();
+
+            // gets the current gamemanager
             _gameManager = MainWindow.GameInstance();
+
+            // setes player logo
+            // static img for now
             ImgPlayerLogo.Source = new BitmapImage(new Uri(@"/Assets/dice.png", UriKind.Relative));
+
+            // starts with matching all cards
             _gameManager.PlayerMatchCards();
+
+            // sets text to current player name
             TxtPlayerName.Text = _gameManager.GetPlayerName();
+
+            // sets text to current player card number
             TxtPlayerCardAmout.Text = _gameManager.GetPlayerCardAmount().ToString();
+
+            // shows what cards can be picked
             ContentController.Content = new UCard(_gameManager.PlayerSelectCard());
+
+            // event for selected card
             UCard.SelectedCard += UCard_SelectedCard;
 
-            // testing area
-            //ImgTest.Source = new BitmapImage(new Uri(@"/Assets/Cards/C1.png", UriKind.Relative));
+            // gets the current players cards
             _currentPlayerCards = _gameManager.GetPlayerCards();
+            
+            // creates images for each card
             foreach (ICard card in _currentPlayerCards)
             {
+                // creates new image
                 Image img = new Image();
+
+                // sets height and width
                 img.Height = 50;
                 img.Width = 40;
+
+                // sets source 
                 img.Source = new BitmapImage(new Uri(@"/Assets/Cards/" + card.GetImageName(), UriKind.Relative));
+
+                // adds image to stackpanel
                 stackPlayerCards.Children.Add(img);
             }
 
         }
 
+        // method to handle card selection
         private void UCard_SelectedCard(object sender, PropertyChangedEventArgs e)
         {
+            // gets the int of selected card
             int selectedCard = (int)sender;
+
+            // tells manager to take the card
             _gameManager.PlayerTakeCard(selectedCard);
+
+            // matches cards if possible
             _gameManager.PlayerMatchCards();
+
+            // ends round
             EndRound();
         }
 
+        // method to change turn / end round
         private void EndRound()
         {
+            // checks for victory conditions
             _gameManager.CheckVictory();
+
+            // changes turn
             _gameManager.EndTurn();
+
+            // matches cards if possible
             _gameManager.PlayerMatchCards();
+
+            // if there is only one player
             if (_gameManager.ActivePlayers() == 1)
             {
-                // go to lose screen here
+                // sets window to show lose screen
                 ContentController.Content = new UEndScreen(_gameManager.GetPlayerName());
             }
+            
+            // if there is more then one player
             else
             {
+                // sets txt to current players name
                 TxtPlayerName.Text = _gameManager.GetPlayerName();
+
+                // sets text to current players card number
                 TxtPlayerCardAmout.Text = _gameManager.GetPlayerCardAmount().ToString();
+
+                // clears stack for card images
                 stackPlayerCards.Children.Clear();
+
+                // gets current players cards
                 _currentPlayerCards = _gameManager.GetPlayerCards();
+
+                // creates images for each card
                 foreach (ICard card in _currentPlayerCards)
                 {
                     Image img = new Image();
@@ -80,6 +131,8 @@ namespace WPFUI.UserControls
                     img.Source = new BitmapImage(new Uri(@"/Assets/Cards/" + card.GetImageName(), UriKind.Relative));
                     stackPlayerCards.Children.Add(img);
                 }
+
+                // sets window to show card pick options
                 ContentController.Content = new UCard(_gameManager.PlayerSelectCard());
             }
         }
