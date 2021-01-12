@@ -39,6 +39,9 @@ namespace WPFUI.UserControls
                 btn.Height = 50;
                 btn.Margin = new Thickness(5);
                 btn.Name = "btn" + (i + 1);
+                Image img = new Image();
+                img.Source = new BitmapImage(new Uri(@"/Assets/CardImg.jpg", UriKind.Relative));
+                btn.Content = img;
                 btn.Click += new RoutedEventHandler(ButtonClick);
                 stack.Children.Add(btn);
             }
