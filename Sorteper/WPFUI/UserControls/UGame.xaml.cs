@@ -25,7 +25,6 @@ namespace WPFUI.UserControls
         {
             InitializeComponent();
             gameManager = MainWindow.GameInstance();
-            gameManager.PlayerMatchCards();
             ImgPlayerLogo.Source = new BitmapImage(new Uri(@"/Assets/dice.png", UriKind.Relative));
             TxtPlayerName.Text = gameManager.GetPlayerName();
             TxtPlayerCardAmout.Text = gameManager.GetPlayerCardAmount().ToString();
@@ -37,11 +36,26 @@ namespace WPFUI.UserControls
         {
             int selectedCard = (int)sender;
             gameManager.PlayerTakeCard(selectedCard);
+            gameManager.PlayerMatchCards();
+            EndRound();
         }
 
         private void EndRound()
         {
+            gameManager.PlayerMatchCards();
+            gameManager.CheckVictory();
             gameManager.EndTurn();
+            TxtPlayerName.Text = gameManager.GetPlayerName();
+            TxtPlayerCardAmout.Text = gameManager.GetPlayerCardAmount().ToString();
+            if (gameManager.ActivePlayers() == 1)
+            {
+                // go to lose screen here
+                ContentController.Content = new UEndScreen(gameManager.GetPlayerName());
+            }
+            else
+            {
+                ContentController.Content = new UCard(gameManager.PlayerSelectCard());
+            }
         }
     }
 }

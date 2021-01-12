@@ -30,6 +30,8 @@ namespace WPFUI.UserControls
 
         private void btnNext_Click(object sender, RoutedEventArgs e)
         {
+            // make input checkup
+
             players = int.Parse(txtboxNumber.Text);
             lblNumber.Visibility = Visibility.Hidden;
             txtboxNumber.Visibility = Visibility.Hidden;
@@ -54,6 +56,7 @@ namespace WPFUI.UserControls
                     btnPlayerNext.Content = "Start";
                     txtboxPlayername.Visibility = Visibility.Hidden;
                     lblPlayerName.Visibility = Visibility.Hidden;
+                    btnPlayerNext.Focus();
                 }
             }
             else

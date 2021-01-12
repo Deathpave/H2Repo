@@ -28,3 +28,5 @@ C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Sorteper\WPFUI\bin\Debug\netcorea
 C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Sorteper\WPFUI\obj\Debug\netcoreapp3.1\WPFUI.csproj.CopyComplete
 C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Sorteper\WPFUI\obj\Debug\netcoreapp3.1\UserControls\USetup.g.cs
 C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Sorteper\WPFUI\obj\Debug\netcoreapp3.1\UserControls\USetup.baml
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Sorteper\WPFUI\obj\Debug\netcoreapp3.1\UserControls\UEndScreen.g.cs
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Sorteper\WPFUI\obj\Debug\netcoreapp3.1\UserControls\UEndScreen.baml

@@ -22,6 +22,12 @@ namespace WPFUI
             UMenu.Exit += UMenu_Exit;
             USetup.PlayerName += USetup_PlayerName;
             USetup.Close += USetup_Close;
+            UEndScreen.reset += UEndScreen_reset;
+        }
+
+        private void UEndScreen_reset(object sender, PropertyChangedEventArgs e)
+        {
+            ContentController.Content = new USetup();
         }
 
         public static GameManager GameInstance()

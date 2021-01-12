@@ -157,7 +157,14 @@ namespace SorteperLibrary
 
         public string GetPlayerName()
         {
-            return players[currentPlayer].GetName();
+            try
+            {
+                return players[currentPlayer].GetName();
+            }
+            catch (Exception e)
+            {
+                return players[0].GetName();
+            }
         }
 
         public int GetPlayerCardAmount()
