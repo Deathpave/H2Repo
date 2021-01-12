@@ -11,11 +11,11 @@ namespace WPFUI
     /// </summary>
     public partial class MainWindow : Window
     {
-        static GameManager gameManager = null;
+        private static GameManager _gameManager = null;
         public MainWindow()
         {
             InitializeComponent();
-            gameManager = new GameManager();
+            _gameManager = new GameManager();
             ContentController.Content = new UMenu();
             UMenu.NewGame += UMenu_NewGame;
             UMenu.Tutorial += UMenu_Tutorial;
@@ -27,12 +27,14 @@ namespace WPFUI
 
         private void UEndScreen_reset(object sender, PropertyChangedEventArgs e)
         {
+            _gameManager = null;
+            _gameManager = new GameManager();
             ContentController.Content = new USetup();
         }
 
         public static GameManager GameInstance()
         {
-            return gameManager;
+            return _gameManager;
         }
 
         private void UMenu_Exit(object sender, PropertyChangedEventArgs e)
@@ -52,14 +54,14 @@ namespace WPFUI
 
         private void USetup_Close(object sender, PropertyChangedEventArgs e)
         {
-            gameManager.DealCards();
+            _gameManager.DealCards();
             ContentController.Content = new UGame();
         }
 
         private void USetup_PlayerName(object sender, PropertyChangedEventArgs e)
         {
             string x = sender.ToString();
-            gameManager.CreatePlayer(x);
+            _gameManager.CreatePlayer(x);
         }
     }
 }

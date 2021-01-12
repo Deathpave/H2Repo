@@ -23,6 +23,7 @@ namespace WPFUI.UserControls
         public UEndScreen(string playername)
         {
             InitializeComponent();
+            lblLostPlayer.Content = playername;
         }
 
         private void btnNewGame_Click(object sender, RoutedEventArgs e)
