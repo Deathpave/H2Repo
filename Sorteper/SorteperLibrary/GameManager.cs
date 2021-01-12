@@ -119,6 +119,7 @@ namespace SorteperLibrary
                 return "take card error";
             }
         }
+
         public int ActivePlayers()
         {
             return players.Count;
@@ -175,6 +176,11 @@ namespace SorteperLibrary
         public int GetCurrentPlayer()
         {
             return currentPlayer;
+        }
+
+        public List<ICard> GetPlayerCards()
+        {
+            return players[currentPlayer].GetCards();
         }
 
         public void DealCards()

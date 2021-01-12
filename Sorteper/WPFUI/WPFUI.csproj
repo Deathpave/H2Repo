@@ -8,6 +8,58 @@
 
   <ItemGroup>
     <None Remove="Assets\CardImg.jpg" />
+    <None Remove="Assets\Cards\C1.png" />
+    <None Remove="Assets\Cards\C10.png" />
+    <None Remove="Assets\Cards\C11.png" />
+    <None Remove="Assets\Cards\C12.png" />
+    <None Remove="Assets\Cards\C13.png" />
+    <None Remove="Assets\Cards\C2.png" />
+    <None Remove="Assets\Cards\C3.png" />
+    <None Remove="Assets\Cards\C4.png" />
+    <None Remove="Assets\Cards\C5.png" />
+    <None Remove="Assets\Cards\C6.png" />
+    <None Remove="Assets\Cards\C7.png" />
+    <None Remove="Assets\Cards\C8.png" />
+    <None Remove="Assets\Cards\C9.png" />
+    <None Remove="Assets\Cards\D1.png" />
+    <None Remove="Assets\Cards\D10.png" />
+    <None Remove="Assets\Cards\D11.png" />
+    <None Remove="Assets\Cards\D12.png" />
+    <None Remove="Assets\Cards\D13.png" />
+    <None Remove="Assets\Cards\D2.png" />
+    <None Remove="Assets\Cards\D3.png" />
+    <None Remove="Assets\Cards\D4.png" />
+    <None Remove="Assets\Cards\D5.png" />
+    <None Remove="Assets\Cards\D6.png" />
+    <None Remove="Assets\Cards\D7.png" />
+    <None Remove="Assets\Cards\D8.png" />
+    <None Remove="Assets\Cards\D9.png" />
+    <None Remove="Assets\Cards\H1.png" />
+    <None Remove="Assets\Cards\H10.png" />
+    <None Remove="Assets\Cards\H11.png" />
+    <None Remove="Assets\Cards\H12.png" />
+    <None Remove="Assets\Cards\H13.png" />
+    <None Remove="Assets\Cards\H2.png" />
+    <None Remove="Assets\Cards\H3.png" />
+    <None Remove="Assets\Cards\H4.png" />
+    <None Remove="Assets\Cards\H5.png" />
+    <None Remove="Assets\Cards\H6.png" />
+    <None Remove="Assets\Cards\H7.png" />
+    <None Remove="Assets\Cards\H8.png" />
+    <None Remove="Assets\Cards\H9.png" />
+    <None Remove="Assets\Cards\S1.png" />
+    <None Remove="Assets\Cards\S10.png" />
+    <None Remove="Assets\Cards\S11.png" />
+    <None Remove="Assets\Cards\S12.png" />
+    <None Remove="Assets\Cards\S13.png" />
+    <None Remove="Assets\Cards\S2.png" />
+    <None Remove="Assets\Cards\S3.png" />
+    <None Remove="Assets\Cards\S4.png" />
+    <None Remove="Assets\Cards\S5.png" />
+    <None Remove="Assets\Cards\S6.png" />
+    <None Remove="Assets\Cards\S7.png" />
+    <None Remove="Assets\Cards\S8.png" />
+    <None Remove="Assets\Cards\S9.png" />
     <None Remove="Assets\dice.png" />
   </ItemGroup>
 
@@ -17,6 +69,162 @@
 
   <ItemGroup>
     <Resource Include="Assets\CardImg.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\C1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\C10.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\C11.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\C12.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\C13.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\C2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\C3.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\C4.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\C5.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\C6.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\C7.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\C8.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\C9.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\D1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\D10.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\D11.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\D12.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\D13.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\D2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\D3.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\D4.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\D5.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\D6.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\D7.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\D8.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\D9.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\H1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\H10.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\H11.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\H12.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\H13.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\H2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\H3.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\H4.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\H5.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\H6.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\H7.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\H8.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\H9.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\S1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\S10.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\S11.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\S12.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\S13.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\S2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\S3.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\S4.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\S5.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\S6.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\S7.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\S8.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Cards\S9.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Assets\dice.png">

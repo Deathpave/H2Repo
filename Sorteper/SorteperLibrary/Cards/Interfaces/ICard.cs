@@ -12,5 +12,6 @@ namespace SorteperLibrary.Cards.Interfaces
         string GetName();
         int GetSuit();
         int GetValue();
+        string GetImageName();
     }
 }

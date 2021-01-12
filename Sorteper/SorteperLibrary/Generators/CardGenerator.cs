@@ -30,7 +30,7 @@ namespace SorteperLibrary.Generators
                         for (int s = 1; s < 14; s++)
                         {
                             // hearts
-                            ICard card = new Card(1, s, "");
+                            ICard card = new Card(1, s, "", "H" + s + ".png");
                             _cards.Add(card);
                         }
                         break;
@@ -38,7 +38,7 @@ namespace SorteperLibrary.Generators
                         for (int s = 1; s < 14; s++)
                         {
                             // diamonds
-                            ICard card = new Card(1, s, "");
+                            ICard card = new Card(1, s, "", "D" + s + ".png");
                             _cards.Add(card);
                         }
                         break;
@@ -46,19 +46,19 @@ namespace SorteperLibrary.Generators
                         for (int s = 1; s < 14; s++)
                         {
                             // clubs
-                            ICard card = new Card(2, s, "");
+                            if (s == 11)
+                            {
+                                continue;
+                            }
+                            ICard card = new Card(2, s, "", "C" + s + ".png");
                             _cards.Add(card);
                         }
                         break;
                     case 4:
                         for (int s = 1; s < 14; s++)
                         {
-                            // spades
-                            if (s == 11)
-                            {
-                                continue;
-                            }
-                            ICard card = new Card(2, s, "");
+                            // spades                            
+                            ICard card = new Card(2, s, "", "S" + s + ".png");
                             _cards.Add(card);
                         }
                         break;

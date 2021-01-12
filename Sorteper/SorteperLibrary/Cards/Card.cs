@@ -13,13 +13,15 @@ namespace SorteperLibrary
         private string _name;
         private int _suit;
         private int _value;
+        private string _image;
 
         // Constructor for card class
-        public Card(int suit, int value, string name)
+        public Card(int suit, int value, string name, string image)
         {
             _name = name;
             _suit = suit;
             _value = value;
+            _image = image;
         }
 
         // Method to get the name of the card
@@ -39,6 +41,11 @@ namespace SorteperLibrary
         public int GetValue()
         {
             return _value;
+        }
+
+        public string GetImageName()
+        {
+            return _image;
         }
     }
 }
