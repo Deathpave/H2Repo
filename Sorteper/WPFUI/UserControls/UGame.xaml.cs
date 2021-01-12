@@ -45,8 +45,6 @@ namespace WPFUI.UserControls
             gameManager.PlayerMatchCards();
             gameManager.CheckVictory();
             gameManager.EndTurn();
-            TxtPlayerName.Text = gameManager.GetPlayerName();
-            TxtPlayerCardAmout.Text = gameManager.GetPlayerCardAmount().ToString();
             if (gameManager.ActivePlayers() == 1)
             {
                 // go to lose screen here
@@ -55,6 +53,8 @@ namespace WPFUI.UserControls
             else
             {
                 ContentController.Content = new UCard(gameManager.PlayerSelectCard());
+                TxtPlayerName.Text = gameManager.GetPlayerName();
+                TxtPlayerCardAmout.Text = gameManager.GetPlayerCardAmount().ToString();
             }
         }
     }

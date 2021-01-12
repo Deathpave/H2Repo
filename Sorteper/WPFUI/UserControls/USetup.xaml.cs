@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Text;
+using System.Threading;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -31,16 +32,22 @@ namespace WPFUI.UserControls
         private void btnNext_Click(object sender, RoutedEventArgs e)
         {
             // make input checkup
+            try
+            {
+                players = int.Parse(txtboxNumber.Text);
+                lblNumber.Visibility = Visibility.Hidden;
+                txtboxNumber.Visibility = Visibility.Hidden;
+                btnNext.Visibility = Visibility.Hidden;
 
-            players = int.Parse(txtboxNumber.Text);
-            lblNumber.Visibility = Visibility.Hidden;
-            txtboxNumber.Visibility = Visibility.Hidden;
-            btnNext.Visibility = Visibility.Hidden;
-
-            lblPlayerName.Visibility = Visibility.Visible;
-            txtboxPlayername.Visibility = Visibility.Visible;
-            btnPlayerNext.Visibility = Visibility.Visible;
-            txtboxPlayername.Focus();
+                lblPlayerName.Visibility = Visibility.Visible;
+                txtboxPlayername.Visibility = Visibility.Visible;
+                btnPlayerNext.Visibility = Visibility.Visible;
+                txtboxPlayername.Focus();
+            }
+            catch
+            {
+                MessageBox.Show("Input is not a number");
+            }
         }
 
         private void btnPlayerNext_Click(object sender, RoutedEventArgs e)
