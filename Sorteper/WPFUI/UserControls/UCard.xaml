@@ -7,9 +7,9 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
 
-    <StackPanel Orientation="Vertical" Name="CardBoardStack" Background="White">
+    <StackPanel Orientation="Vertical" Name="CardBoardStack" Background="LightSkyBlue">
         <TextBlock Text="Select a card" HorizontalAlignment="Center" FontSize="20" FontWeight="Bold"></TextBlock>
-        <StackPanel Orientation="Horizontal" Name="CardsStack">
+        <StackPanel Orientation="Horizontal" Name="CardsStack" Margin="5,0,5,0">
         </StackPanel>
     </StackPanel>
 </UserControl>

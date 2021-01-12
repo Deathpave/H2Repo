@@ -8,8 +8,8 @@
              d:DesignHeight="450" d:DesignWidth="800">
     <StackPanel Background="LightSkyBlue">
         <Label HorizontalAlignment="Center" Margin="0,75,0,0" FontSize="25" FontWeight="Bold">Main Menu</Label>
-        <Button Width="200" Content="New game" Margin="0,100,0,0" Background="AliceBlue"></Button>
-        <Button Width="200" Content="Tutorial" Margin="0,25,0,0" Background="AliceBlue"></Button>
-        <Button Width="200" Content="Exit" Margin="0,25,0,0" Background="AliceBlue"></Button>
+        <Button Width="200" Content="New game" Name="btnNewGame" Margin="0,100,0,0" Background="AliceBlue" Click="btnNewGame_Click"></Button>
+        <Button Width="200" Content="Tutorial" Name="btnTutorial" Margin="0,25,0,0" Background="AliceBlue" Click="btnTutorial_Click"></Button>
+        <Button Width="200" Content="Exit" Name="btnExit" Margin="0,25,0,0" Background="AliceBlue" Click="btnExit_Click"></Button>
     </StackPanel>
 </UserControl>

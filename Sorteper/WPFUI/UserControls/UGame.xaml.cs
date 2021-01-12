@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SorteperLibrary;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -10,6 +11,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.ComponentModel;
 
 namespace WPFUI.UserControls
 {
@@ -18,10 +20,28 @@ namespace WPFUI.UserControls
     /// </summary>
     public partial class UGame : UserControl
     {
+        GameManager gameManager = null;
         public UGame()
         {
             InitializeComponent();
-            ContentController.Content = new UCard();
+            gameManager = MainWindow.GameInstance();
+            gameManager.PlayerMatchCards();
+            ImgPlayerLogo.Source = new BitmapImage(new Uri(@"/Assets/dice.png", UriKind.Relative));
+            TxtPlayerName.Text = gameManager.GetPlayerName();
+            TxtPlayerCardAmout.Text = gameManager.GetPlayerCardAmount().ToString();
+            ContentController.Content = new UCard(gameManager.PlayerSelectCard());
+            UCard.SelectedCard += UCard_SelectedCard;
+        }
+
+        private void UCard_SelectedCard(object sender, PropertyChangedEventArgs e)
+        {
+            int selectedCard = (int)sender;
+            gameManager.PlayerTakeCard(selectedCard);
+        }
+
+        private void EndRound()
+        {
+            gameManager.EndTurn();
         }
     }
 }

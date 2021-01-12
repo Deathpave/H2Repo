@@ -7,7 +7,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
 
-    <StackPanel Background="White">
+    <StackPanel Background="LightSkyBlue">
         <ContentControl x:Name="ContentController" Height="340">
         </ContentControl>
         <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom">

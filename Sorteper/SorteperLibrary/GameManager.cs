@@ -4,6 +4,7 @@ using SorteperLibrary.Players;
 using SorteperLibrary.Players.Interfaces;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Text;
 
 namespace SorteperLibrary
@@ -16,7 +17,7 @@ namespace SorteperLibrary
         // Empty list for players
         List<IPlayer> players = new List<IPlayer>();
         Random random = new Random();
-        
+
         // Handling of turn
         int currentPlayer = 0;
 
@@ -123,19 +124,19 @@ namespace SorteperLibrary
             return players.Count;
         }
 
-        public int[] PlayerSelectCard()
+        public int PlayerSelectCard()
         {
             if (currentPlayer == players.Count)
             {
-                return new int[] { 1, players[0].GetCardAmount() };
+                return players[0].GetCardAmount();
             }
             else if (currentPlayer == 0)
             {
-                return new int[] { 1, players[players.Count - 1].GetCardAmount() };
+                return players[players.Count - 1].GetCardAmount();
             }
             else
             {
-                return new int[] { 1, players[currentPlayer - 1].GetCardAmount() };
+                return players[currentPlayer - 1].GetCardAmount();
             }
         }
 
@@ -157,6 +158,11 @@ namespace SorteperLibrary
         public string GetPlayerName()
         {
             return players[currentPlayer].GetName();
+        }
+
+        public int GetPlayerCardAmount()
+        {
+            return players[currentPlayer].GetCardAmount();
         }
 
         public int GetCurrentPlayer()

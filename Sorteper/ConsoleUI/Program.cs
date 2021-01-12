@@ -41,8 +41,8 @@ namespace ConsoleUI
                 Console.WriteLine(manager.GetPlayerName() + "'s turn");
 
                 // get card options
-                int[] cardOptions = manager.PlayerSelectCard();
-                Console.WriteLine("Select a card from {0} to {1}", cardOptions[0], cardOptions[1]);
+                int cardOptions = manager.PlayerSelectCard();
+                Console.WriteLine("Select a card from {0} to {1}", 1, cardOptions);
 
                 // write card taken
                 Console.WriteLine(manager.PlayerTakeCard(int.Parse(Console.ReadLine())));

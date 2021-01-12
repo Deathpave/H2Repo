@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1
 C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Sorteper\WPFUI\App.xaml
-4-1241036367
+51299593166
 
-6-1534977737
+71725086738
 193-1042324769
-MainWindow.xaml;UserControls\UCard.xaml;UserControls\UGame.xaml;UserControls\UMenu.xaml;
+MainWindow.xaml;UserControls\UCard.xaml;UserControls\UGame.xaml;UserControls\UMenu.xaml;UserControls\USetup.xaml;
 
 False
 

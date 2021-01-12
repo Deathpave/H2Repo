@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -18,9 +19,28 @@ namespace WPFUI.UserControls
     /// </summary>
     public partial class UMenu : UserControl
     {
+        public static PropertyChangedEventHandler NewGame;
+        public static PropertyChangedEventHandler Tutorial;
+        public static PropertyChangedEventHandler Exit;
+
         public UMenu()
         {
             InitializeComponent();
+        }
+
+        private void btnNewGame_Click(object sender, RoutedEventArgs e)
+        {
+            NewGame?.Invoke("", null);
+        }
+
+        private void btnTutorial_Click(object sender, RoutedEventArgs e)
+        {
+            Tutorial?.Invoke("", null);
+        }
+
+        private void btnExit_Click(object sender, RoutedEventArgs e)
+        {
+            Exit?.Invoke("", null);
         }
     }
 }

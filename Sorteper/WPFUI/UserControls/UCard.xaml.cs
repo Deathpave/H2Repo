@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -18,11 +19,12 @@ namespace WPFUI.UserControls
     /// </summary>
     public partial class UCard : UserControl
     {
-        public UCard()
+        public static event PropertyChangedEventHandler SelectedCard;
+        public UCard(int opponentscards)
         {
             InitializeComponent();
             StackPanel stack = CardsStack;
-            for (int i = 0; i < 27; i++)
+            for (int i = 0; i < opponentscards; i++)
             {
                 if (i % 6 == 0)
                 {
@@ -36,9 +38,20 @@ namespace WPFUI.UserControls
                 btn.Width = 40;
                 btn.Height = 50;
                 btn.Margin = new Thickness(5);
-                btn.Name = "btn" + i;
+                btn.Name = "btn" + (i + 1);
+                btn.Click += new RoutedEventHandler(ButtonClick);
                 stack.Children.Add(btn);
             }
+        }
+
+        private void ButtonClick(object sender, EventArgs e)
+        {
+            // catch what card has been clicked
+            Button btnClicked = (Button)sender;
+            // get the number of the card
+            int selectedCard = int.Parse(btnClicked.Name.Remove(0, 3));
+            // event up to UGame to progress
+            SelectedCard?.Invoke(selectedCard, null);
         }
     }
 }

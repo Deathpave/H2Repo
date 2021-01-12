@@ -26,3 +26,5 @@ C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Sorteper\WPFUI\obj\Debug\netcorea
 C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Sorteper\WPFUI\bin\Debug\netcoreapp3.1\SorteperLibrary.dll
 C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Sorteper\WPFUI\bin\Debug\netcoreapp3.1\SorteperLibrary.pdb
 C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Sorteper\WPFUI\obj\Debug\netcoreapp3.1\WPFUI.csproj.CopyComplete
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Sorteper\WPFUI\obj\Debug\netcoreapp3.1\UserControls\USetup.g.cs
+C:\Users\MartinRiehnMadsen\source\repos\H2Repo\Sorteper\WPFUI\obj\Debug\netcoreapp3.1\UserControls\USetup.baml
