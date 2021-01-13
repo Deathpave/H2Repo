@@ -33,7 +33,6 @@ namespace WPFUI
         private void UEndScreen_reset(object sender, PropertyChangedEventArgs e)
         {
             _gameManager.ResetManager();
-            //_gameManager = new GameManager();
             ContentController.Content = new USetup();
         }
 
