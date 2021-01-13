@@ -24,7 +24,6 @@ namespace WPFUI
             menu.NewGame += UMenu_NewGame;
             menu.Tutorial += UMenu_Tutorial;
             menu.Exit += UMenu_Exit;
-            //UEndScreen.reset += UEndScreen_reset;
         }
 
         // method to handle new game after last one is done

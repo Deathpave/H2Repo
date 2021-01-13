@@ -42,9 +42,6 @@ namespace WPFUI.UserControls
             uCard.SelectedCard += UCard_SelectedCard;
             ContentController.Content = uCard;
 
-            // event for selected card
-            //UCard.SelectedCard += UCard_SelectedCard;
-
             // gets the current players cards
             _currentPlayerCards = _gameManager.GetPlayerCards();
 
@@ -66,10 +63,6 @@ namespace WPFUI.UserControls
             }
         }
 
-        private void Reset()
-        {
-            //UCard.SelectedCard -= UCard_SelectedCard;
-        }
         // method to handle card selection
         private void UCard_SelectedCard(object sender, PropertyChangedEventArgs e)
         {
@@ -92,12 +85,9 @@ namespace WPFUI.UserControls
             // checks for victory conditions
             _gameManager.CheckVictory();
 
-            // changes turn
-
             // if there is only one player
             if (_gameManager.ActivePlayers() == 1)
             {
-                Reset();
                 // sets window to show lose screen
                 UEndScreen endScreen = new UEndScreen(_gameManager.GetPlayerName());
                 endScreen.reset += EndScreen_reset;
@@ -107,6 +97,7 @@ namespace WPFUI.UserControls
             // if there is more then one player
             else
             {
+            // changes turn
                 _gameManager.EndTurn();
 
                 // matches cards if possible
