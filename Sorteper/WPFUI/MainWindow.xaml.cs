@@ -3,7 +3,6 @@ using System.Windows;
 using WPFUI.UserControls;
 using System.ComponentModel;
 using System;
-using System.Threading;
 
 namespace WPFUI
 {
