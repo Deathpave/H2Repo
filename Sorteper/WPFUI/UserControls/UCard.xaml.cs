@@ -71,6 +71,7 @@ namespace WPFUI.UserControls
         {
             // catch what card has been clicked
             Button btnClicked = (Button)sender;
+            btnClicked.IsEnabled = false;
             // get the number of the card
             int selectedCard = int.Parse(btnClicked.Name.Remove(0, 3));
             // fires event to pick card

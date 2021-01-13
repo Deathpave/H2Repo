@@ -13,6 +13,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.ComponentModel;
 using SorteperLibrary.Cards.Interfaces;
+using System.Diagnostics;
 
 namespace WPFUI.UserControls
 {
@@ -69,16 +70,19 @@ namespace WPFUI.UserControls
                 // adds image to stackpanel
                 stackPlayerCards.Children.Add(img);
             }
-
         }
 
+        private void Reset()
+        {
+            UCard.SelectedCard -= UCard_SelectedCard;
+        }
         // method to handle card selection
         private void UCard_SelectedCard(object sender, PropertyChangedEventArgs e)
         {
             // gets the int of selected card
             int selectedCard = (int)sender;
 
-            // takes the wrong manager???
+            Debug.WriteLine(sender);
             // tells manager to take the card
             _gameManager.PlayerTakeCard(selectedCard);
 
@@ -96,11 +100,11 @@ namespace WPFUI.UserControls
             _gameManager.CheckVictory();
 
             // changes turn
-            _gameManager.EndTurn();
 
             // if there is only one player
             if (_gameManager.ActivePlayers() == 1)
             {
+                Reset();
                 // sets window to show lose screen
                 ContentController.Content = new UEndScreen(_gameManager.GetPlayerName());
             }
@@ -108,6 +112,7 @@ namespace WPFUI.UserControls
             // if there is more then one player
             else
             {
+                _gameManager.EndTurn();
 
                 // matches cards if possible
                 _gameManager.PlayerMatchCards();

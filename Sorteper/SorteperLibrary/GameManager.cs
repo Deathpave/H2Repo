@@ -5,12 +5,19 @@ using SorteperLibrary.Players.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Diagnostics;
 using System.Text;
 
 namespace SorteperLibrary
 {
     public class GameManager
     {
+        static int counter = 0;
+        public GameManager()
+        {
+            counter++;
+        }
+
         // Generates a list of cards
         List<ICard> cards = new CardGenerator().GenerateCards();
 
@@ -20,6 +27,12 @@ namespace SorteperLibrary
 
         // Handling of turn
         int currentPlayer = 0;
+
+        public void ResetManager()
+        {
+            cards = new CardGenerator().GenerateCards();
+            players = new List<IPlayer>();
+        }
 
         // Method to end the turn
         public void EndTurn()
@@ -75,9 +88,6 @@ namespace SorteperLibrary
 
         public string PlayerTakeCard(int selectedCard)
         {
-            // return the name of the card as well??
-            // return color for now
-
             if (currentPlayer == players.Count)
             {
                 ICard card = players[0].RemoveCard(selectedCard - 1);
@@ -104,20 +114,21 @@ namespace SorteperLibrary
                 }
                 return "take card error";
             }
-            else
-            {
-                ICard card = players[currentPlayer - 1].RemoveCard(selectedCard - 1);
-                players[currentPlayer].AddCard(card);
+            //else
+            //{
+            //    ICard card = players[currentPlayer - 1].RemoveCard(selectedCard - 1);
+            //    players[currentPlayer].AddCard(card);
 
-                switch (card.GetSuit())
-                {
-                    case 1:
-                        return "You got a red " + card.GetValue();
-                    case 2:
-                        return "You got a black " + card.GetValue();
-                }
-                return "take card error";
-            }
+            //    switch (card.GetSuit())
+            //    {
+            //        case 1:
+            //            return "You got a red " + card.GetValue();
+            //        case 2:
+            //            return "You got a black " + card.GetValue();
+            //    }
+            //    return "take card error";
+            //}
+            return "";
         }
 
         public int ActivePlayers()
@@ -158,11 +169,11 @@ namespace SorteperLibrary
 
         public string GetPlayerName()
         {
-            try
+            if (players.Count != 1)
             {
                 return players[currentPlayer].GetName();
             }
-            catch (Exception e)
+            else
             {
                 return players[0].GetName();
             }

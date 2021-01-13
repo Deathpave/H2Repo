@@ -32,8 +32,8 @@ namespace WPFUI
         // method to handle new game after last one is done
         private void UEndScreen_reset(object sender, PropertyChangedEventArgs e)
         {
-            _gameManager = null;
-            _gameManager = new GameManager();
+            _gameManager.ResetManager();
+            //_gameManager = new GameManager();
             ContentController.Content = new USetup();
         }
 
@@ -47,7 +47,7 @@ namespace WPFUI
         private void UMenu_Tutorial(object sender, PropertyChangedEventArgs e)
         {
             // not implemented!!
-            ContentController.Content = ""; // screen for youtube vid??
+            MessageBox.Show("Not implemented");
         }
 
         // method to set the window to show the setup

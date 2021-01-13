@@ -19,7 +19,6 @@ namespace WPFUI.UserControls
     /// </summary>
     public partial class UEndScreen : UserControl
     {
-        // event
         public static event PropertyChangedEventHandler reset;
         public UEndScreen(string playername)
         {
