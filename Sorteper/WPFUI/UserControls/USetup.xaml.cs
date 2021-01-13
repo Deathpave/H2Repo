@@ -22,8 +22,8 @@ namespace WPFUI.UserControls
     public partial class USetup : UserControl
     {
         // events to handle playername and closing
-        public static event PropertyChangedEventHandler PlayerName;
-        public static event PropertyChangedEventHandler Close;
+        public event PropertyChangedEventHandler PlayerName;
+        public event PropertyChangedEventHandler Close;
         // int to count players
         int players = 0;
         public USetup()

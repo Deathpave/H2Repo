@@ -20,9 +20,9 @@ namespace WPFUI.UserControls
     public partial class UMenu : UserControl
     {
         // events
-        public static PropertyChangedEventHandler NewGame;
-        public static PropertyChangedEventHandler Tutorial;
-        public static PropertyChangedEventHandler Exit;
+        public PropertyChangedEventHandler NewGame;
+        public PropertyChangedEventHandler Tutorial;
+        public PropertyChangedEventHandler Exit;
 
         public UMenu()
         {

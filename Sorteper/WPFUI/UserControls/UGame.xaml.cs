@@ -25,6 +25,7 @@ namespace WPFUI.UserControls
         // props
         private GameManager _gameManager = null;
         private List<ICard> _currentPlayerCards = null;
+        public event PropertyChangedEventHandler EndGame;
         public UGame(GameManager gameManager)
         {
             InitializeComponent();
@@ -46,10 +47,12 @@ namespace WPFUI.UserControls
             TxtPlayerCardAmout.Text = _gameManager.GetPlayerCardAmount().ToString();
 
             // shows what cards can be picked
-            ContentController.Content = new UCard(_gameManager.PlayerSelectCard());
+            UCard uCard = new UCard(_gameManager.PlayerSelectCard());
+            uCard.SelectedCard += UCard_SelectedCard;
+            ContentController.Content = uCard;
 
             // event for selected card
-            UCard.SelectedCard += UCard_SelectedCard;
+            //UCard.SelectedCard += UCard_SelectedCard;
 
             // gets the current players cards
             _currentPlayerCards = _gameManager.GetPlayerCards();
@@ -74,7 +77,7 @@ namespace WPFUI.UserControls
 
         private void Reset()
         {
-            UCard.SelectedCard -= UCard_SelectedCard;
+            //UCard.SelectedCard -= UCard_SelectedCard;
         }
         // method to handle card selection
         private void UCard_SelectedCard(object sender, PropertyChangedEventArgs e)
@@ -82,7 +85,6 @@ namespace WPFUI.UserControls
             // gets the int of selected card
             int selectedCard = (int)sender;
 
-            Debug.WriteLine(sender);
             // tells manager to take the card
             _gameManager.PlayerTakeCard(selectedCard);
 
@@ -106,7 +108,9 @@ namespace WPFUI.UserControls
             {
                 Reset();
                 // sets window to show lose screen
-                ContentController.Content = new UEndScreen(_gameManager.GetPlayerName());
+                UEndScreen endScreen = new UEndScreen(_gameManager.GetPlayerName());
+                endScreen.reset += EndScreen_reset;
+                ContentController.Content = endScreen;
             }
 
             // if there is more then one player
@@ -140,8 +144,15 @@ namespace WPFUI.UserControls
                 }
 
                 // sets window to show card pick options
-                ContentController.Content = new UCard(_gameManager.PlayerSelectCard());
+                UCard uCard = new UCard(_gameManager.PlayerSelectCard());
+                uCard.SelectedCard += UCard_SelectedCard;
+                ContentController.Content = uCard;
             }
+        }
+
+        private void EndScreen_reset(object sender, PropertyChangedEventArgs e)
+        {
+            EndGame?.Invoke(null, null);
         }
     }
 }

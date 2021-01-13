@@ -20,7 +20,7 @@ namespace WPFUI.UserControls
     public partial class UCard : UserControl
     {
         // event
-        public static event PropertyChangedEventHandler SelectedCard;
+        public  event PropertyChangedEventHandler SelectedCard;
         public UCard(int opponentscards)
         {
             InitializeComponent();
