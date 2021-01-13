@@ -12,12 +12,6 @@ namespace SorteperLibrary
 {
     public class GameManager
     {
-        static int counter = 0;
-        public GameManager()
-        {
-            counter++;
-        }
-
         // Generates a list of cards
         List<ICard> cards = new CardGenerator().GenerateCards();
 
